@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "email": "saikrishna@gmail.org",
+      "username": "saikrishna",
+      "password": "111235",
+      "id": 2
+    },
+    {
+      "username": "vmurali100",
+      "email": "vmurali100@gmail.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "username": "murali.veesambattu",
+      "email": "murali.veesambattu@socgen.com",
+      "password": "12345",
+      "id": 4
+    }
+  ]
+}

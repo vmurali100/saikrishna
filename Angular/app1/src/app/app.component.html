@@ -1,0 +1,14 @@
+<h2>Hello From App Component</h2>
+
+<h2>My Name is : {{myName}}</h2>
+
+<div>
+  <p>My First Name is : {{myDetails.fname}}</p>
+  <p>My First Last Name is : {{myDetails.lname}}</p>
+  <p>My First Email is : {{myDetails.email}}</p>
+  <p>My First Contact No is : {{myDetails.phone}}</p>
+</div>
+<button (click)="showFriendsNow()">Show And Hide Friends</button>
+<ul *ngIf="showFriends">
+  <li *ngFor="let sai of myFriends">{{sai}}</li>
+</ul>

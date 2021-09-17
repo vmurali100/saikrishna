@@ -1,0 +1,15 @@
+<p>user-child works!</p>
+
+<!-- <h2>Data Received from Parent Componet is : {{dataFromParent}}</h2> -->
+
+<!-- <div>
+    <h3>First Name : {{userFromParent.fname}}</h3>
+    <h3>Last Name : {{userFromParent.lname}}</h3>
+</div> -->
+
+<div>
+    <ul *ngFor ="let user of usersFromParent">
+        <li>{{user.fname}}</li>
+        <li>{{user.lname}}</li>
+    </ul>
+</div>

@@ -1,0 +1,12 @@
+<form #userForm="ngForm">
+    <label for="fname">First Name :</label>
+    <input type="text" name="fname" id="" ngModel> <br>
+    <label for="fname">Last Name :</label>
+    <input type="text" name="lname" id="" ngModel> <br>
+    <button type="button" (click)="addUser(userForm)">Add User</button>
+</form>
+
+<hr>
+<!-- <app-user-child [dataFromParent]="fname"></app-user-child> -->
+<!-- <app-user-child [userFromParent] = "person"></app-user-child> -->
+<app-user-child [usersFromParent]="users"></app-user-child>

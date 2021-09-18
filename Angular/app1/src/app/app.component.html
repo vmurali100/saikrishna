@@ -1,6 +1,23 @@
 
-<app-user></app-user>
+<!-- <app-user></app-user> -->
 
+<h2>Message from Child Component : {{msgFromchild}}</h2>
+
+<ul>
+  <li>First Name :{{objFrmChild1.fname}}</li>
+  <li>Last Name :{{objFrmChild1.lname}} </li>
+</ul>
+
+<p>Users</p>
+
+<ul>
+  <li *ngFor = "let user of arrayUsers">{{user}}</li>
+</ul>
+<hr>
+<app-child1 
+  (sendMessage)="receiveMsgFrmChild($event)" 
+  (sendObj)="receiveObj($event)"
+  (sendArray)="receiveArray($event)"></app-child1>
 
 
 <!-- <h2>Hello From App Component</h2>

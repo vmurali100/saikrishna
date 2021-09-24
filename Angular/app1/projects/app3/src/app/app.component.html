@@ -1,0 +1,7 @@
+<form [formGroup]="userForm">
+  <label for="fname">First Name : </label>
+  <input type="text" name="" formControlName="fname" required> <br>
+  <label for="lname">Last Name : </label>
+  <input type="text" name="" formControlName="lname" required> <br>
+  <button (click)="addUser()" [disabled]="userForm.invalid">Add User</button>
+</form>

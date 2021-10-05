@@ -1,0 +1,16 @@
+<div class="loader" *ngIf="!product">
+    <img src="assets/loading-buffering.gif" alt="">
+</div>
+<div class="container" *ngIf="product">
+    <div style="text-align: right;">
+        <button class="btn btn-primary" routerLink="/products">Back to Products</button>
+
+    </div>
+    <h1>{{product.title}}</h1>
+    <p>{{product.description}}</p>
+    <p style="color: red;">Price : <strong>{{product.price}}</strong></p>
+    <p><strong>Category : {{product.category}}</strong></p>
+    <img [src]="product.image" alt="Product Image">
+    <p>Product Rating is : {{product.rating.rate}}</p>
+    <p>Total No of Reviews : {{product.rating.count}}</p>
+</div>
